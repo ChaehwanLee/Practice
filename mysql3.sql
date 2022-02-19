@@ -11,7 +11,7 @@ SELECT 열이름
 FROM 테이블이름
 WHERE 조건
 
-USE Employees; --employees를 사용하겠다
+USE Employees; -- employees를 사용하겠다
 
 USE mysql;
 SELECT * FROM employees; -- employees 라는 테이블에서 선택을 하겠다.
@@ -25,3 +25,5 @@ SELECT first_name FROM employees; -- 필요로 하는 열만 가져오기 employ
 -- 테이블이름(열 * 행)
 
 SELECT f_name, l_name, s, FROM employees; -- 여러개의 열을 가져오는 것
+
+-- 주석을 사용할 때는 -- 이후에 한 칸 띄우고 사용, 여러줄 주석 /* */ 으로 묶음
