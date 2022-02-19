@@ -23,3 +23,5 @@ SELECT * FROM titles.employees; -- 테이블의 이름형식, 데이터베이스
 SELECT first_name FROM employees; -- 필요로 하는 열만 가져오기 employees 테이블에서 first_name 행을 조회
 
 -- 테이블이름(열 * 행)
+
+SELECT f_name, l_name, s, FROM employees; -- 여러개의 열을 가져오는 것
