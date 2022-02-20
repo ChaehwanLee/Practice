@@ -22,6 +22,11 @@
 
 # p
 
-a = 3
-if 1 < a < 10:
-    print("Y")
+# a = 3
+# if 1 < a < 10:
+#     print("Y")
+
+age = 17
+if age < 19:
+    print("미성년자 접근금지")
+    print("공부가 나의 일")
