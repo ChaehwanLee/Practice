@@ -1,0 +1,30 @@
+{% extends "base.html" %} <!-- 상속  -->
+
+{% block contents %} <!-- 다른 부분 시작 -->
+<table class="table table-light">
+  <thead class="thead-light">
+	<tr>
+	  <th>#</th>
+	  <th>제목</th>
+	  <th>아이디</th>
+	  <th>일시</th>
+	</tr>
+  </thead>
+  <tbody class="text-dark">
+	{% for board in boards %}
+	<tr onclick="location.href='/board/detail/{{ board.id }}/'">
+	  <th>{{ board.id }}</th>
+	  <td>{{ board.title }}</td>
+	  <td>{{ board.writer }}</td>
+	  <td>{{ board.registered_dttm }}</td>
+	</tr>
+	{% endfor %}
+  </tbody>
+</table>
+
+<!-- 글쓰기버튼만들기  -->
+<div class="col-12">
+    <button class="btn btn-primary" onclick="location.href='/board/write/'">글쓰기</button>
+  </div>
+  
+{% endblock %} <!-- 다른 부분 끝 -->
