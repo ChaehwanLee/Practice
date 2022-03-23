@@ -5,7 +5,7 @@
 //int led5 = 9;
 
 void setup() {
-  for(int i=13; i>8; i--) {
+  for(int i=13; i>8; i--) { // for(초기화; 조건; 증감식) i-- => i = i - 1 / i++ => i = i + 1
     pinMode(i, OUTPUT);
     }
 }
