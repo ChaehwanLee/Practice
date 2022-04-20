@@ -1,4 +1,4 @@
-import PRi.GPIO as gpio
+import RPi.GPIO as gpio
 import time
 pir_pin = 27
 gpio.setmode(gpio.BCM)
